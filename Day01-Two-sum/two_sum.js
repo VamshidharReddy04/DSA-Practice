@@ -1,9 +1,9 @@
 function twoSum(nums,target){
     let seen={};
     for (let i = 0; i<nums.length;i++){
-        let complement=target-nums[i];
-        if(complement in seen){
-            return [seen[complement],i];
+        let result=target-nums[i];
+        if(result in seen){
+            return [seen[result],i];
         }
         seen[nums[i]]=i
     }
