@@ -18,9 +18,9 @@ function twoSumSorted(nums,target){
     let left =0 ,right=nums.length-1;
     while(left<right){
         let s=nums[left]+nums[right];
-        if(s === target){            // In python == is used to check equality but 
-                                     //in javascript ==(loose equality) is used compares values after type Conversionso 
-                                    // we have to use ===(strictly equal) compares both value and type
+        if(s === target){       // In python == is used to check equality but 
+                                // in javascript ==(loose equality) is used compares values after type Conversion
+                                // so we have to use ===(strictly equal) compares both value and type
             return[left,right];
         }else if(s<target){
             left++;
