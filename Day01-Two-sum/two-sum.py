@@ -16,7 +16,8 @@ def twoSumSorted(nums,target):
     while left < right:
         s=nums[left]+nums[right]
         if s==target:       #In python == is used to check equality but 
-                            #in javascript == is used compares values after type Conversionso we have to use ===(strictly equal) compares both value and type
+                            #in javascript == is used compares values after type Conversionso 
+                            # we have to use ===(strictly equal) compares both value and type
             return[left,right]
         else:
             if s<target:
